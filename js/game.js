@@ -36,6 +36,7 @@ function connexion() {
         //console.log(user.email);
         //console.log(user.uid);
         uid = user.uid;
+        read();
     }).catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;

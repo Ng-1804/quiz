@@ -13,10 +13,13 @@ let availableQuesions = [];
 
 
 var questions = JSON.parse(localStorage.getItem('questions'));//Object.values();///Object.values(sessionStorage.getItem("question"));
+var view = localStorage.getItem('view');
 
 console.log('questions: ', questions);
 
-if (questions == null) {
+if(view == null){
+  var view = localStorage.setItem('view', 0)
+  questions = JSON.parse(localStorage.getItem('questions'));
   location.reload();
 }
 

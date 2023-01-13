@@ -14,7 +14,11 @@ let availableQuesions = [];
 
 var questions = JSON.parse(localStorage.getItem('questions'));//Object.values();///Object.values(sessionStorage.getItem("question"));
 
-console.log('retrievedObject: ', questions);
+console.log('questions: ', questions);
+
+if (questions == null) {
+  location.reload();
+}
 
 
 //CONSTANTS
@@ -37,7 +41,7 @@ function startGame(){
       localStorage.setItem("mostRecentScore", score);
 
       //go to the end page
-      return window.location.assign("..//html/fin.html");
+      return window.location.assign("../html/fin.html");
     }
   }, 1000);
 };

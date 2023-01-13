@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Login to Quizzy</title>
+  <link rel="stylesheet" href="../css/app.css" />
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  </div>
+  <main class="container">
+    <div id="home" class="flex-center flex-column">
+      <h1 style="text-align: center;">Login pour jouer à Quizzy</h1>
+      <select name="choixsujet" id="choixsujet" class="btn">
+        <option value="" deselect >----Choisir le sujet----</option>
+        <option value="Technilogie web">Technilogie web</option>
+        <option value="Programmation">Programmation</option>
+        <option value="Culture generale">Culture generale</option>
+        <option value="Autres">Autres</option>
+      </select>
+      <input type="text" name="question" id="question" class="btn" placeholder="Quelle est votre question?">
+      <input type="text" name="choix1" id="choix1" class="btn" placeholder="Ma reponse 1">
+      <input type="text" name="choix2" id="choix2" class="btn" placeholder="Ma reponse 2">
+      <input type="text" name="choix3" id="choix3" class="btn" placeholder="Ma reponse 3">
+      <input type="text" name="choix4" id="choix4" class="btn" placeholder="Ma reponse 4">
+      <select name="choixbonereponse" id="choixbonereponse" class="btn">
+        <option value="" >----Choisir la réponse juste----</option>
+        <option value="1">Ma reponse 1</option>
+        <option value="2">Ma reponse 2</option>
+        <option value="3">Ma reponse 3</option>
+        <option value="4">Ma reponse 4</option>
+      </select>
+      <input type="button" class="btn" value="Ajouter" id="ajouter">
+
+      <div class="divInfo" id="divInfo">
+        Infos de connexion ici
+      </div>
+
+    </div>
+
+    
+  </main>
+
+  <script type="module" src="../js/ajouterquestion.js"></script>
+</body>
+
+
+</html>

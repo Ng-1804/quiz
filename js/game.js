@@ -31,10 +31,6 @@ var uid = "";
 function connexion() {
     signInWithEmailAndPassword(auth, getCookie('email'), getCookie('password')).then((userCredential) => {
         const user = userCredential.user;
-        //console.log(getCookie('email'));
-        //console.log(getCookie('password'));
-        //console.log(user.email);
-        //console.log(user.uid);
         uid = user.uid;
         read();
     }).catch((error) => {
@@ -55,14 +51,6 @@ export function read() {
       //console.log("-----------------"+console.log(tab));
 
       for (let index = 0; index < tab.length; index++) {
-       /* console.log("-----------------"+console.log(tab[index].auteur));
-        console.log("-----------------"+console.log(tab[index].choix1));
-        console.log("-----------------"+console.log(tab[index].choix2));
-        console.log("-----------------"+console.log(tab[index].choix3));
-        console.log("-----------------"+console.log(tab[index].choix4));
-        console.log("-----------------"+console.log(tab[index].choixsujet));
-        console.log("-----------------"+console.log(tab[index].question));
-        console.log("-----------------"+console.log(tab[index].reponse));*/
 
         var q = {
           choixsujet: tab[index].choixsujet,
@@ -81,9 +69,7 @@ export function read() {
       console.log(ret);
       localStorage.setItem('questions', JSON.stringify(ret));;
       ///return ret;
-      
-      //document.getElementById('data').innerHTML = snapshotToArray(snapshot)[0].auteur;
-      //console.log(snapshotToArray(snapshot));
+
   });
 }
 

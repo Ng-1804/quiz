@@ -7,7 +7,7 @@
     rgba(255, 0, 157, 0)
   ), url("https://static.vecteezy.com/system/resources/previews/001/971/264/original/beautiful-cherry-blossom-with-bokeh-lights-background-concept-free-vector.jpg");
   background-color: #F8EDE3;
-  font-size: 40.5%;
+  font-size: 50.5%;
 }
 
 * {
@@ -47,15 +47,12 @@ h3 {
   font-weight: 500;
 }
 
-/* UTILITIES */
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 80rem;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 .container {
@@ -65,7 +62,7 @@ h3 {
 .flex-column {
   display: flex;
   flex-direction: column;
-  margin: 15em;
+  margin: 5em;
 }
 
 .flex-center {

@@ -27,7 +27,7 @@ if(view == null){
 
 //CONSTANTS
 const INCORRECT_TAX = 10;
-const MAX_QUESTIONS = 10;
+const MAX_QUESTIONS = 5;
 
 // Start Game & Timer
 function startGame(){
